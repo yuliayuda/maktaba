@@ -36,27 +36,28 @@ Proyek ini bertujuan untuk melatih model klasifikasi teks menggunakan dataset be
 
 Jika Anda ingin berkontribusi, silakan fork repository ini dan buat pull request.
 
+## Struktur Folder
 
 │
 ├── data/  
-│   ├── dataset.csv              --> (Data teks utama berbahasa Arab)
-│   └── preprocessed_data.csv    --> (Data yang sudah dibersihkan)
+│    ├── dataset.csv              --> (Data teks utama berbahasa Arab)
+│    └── preprocessed_data.csv    --> (Data yang sudah dibersihkan)
 │
 ├── models/  
-│   ├── arabic_sentence_transformer/  --> (Model yang sudah dilatih)
-│   └── tokenizer/                --> (Tokenizer yang digunakan untuk model)
+│    ├── arabic_sentence_transformer/  --> (Model yang sudah dilatih)
+│    └── tokenizer/                --> (Tokenizer yang digunakan untuk model)
 │
 ├── notebooks/  
-│   ├── preprocessing.ipynb       --> (Notebook untuk membersihkan data)
-│   ├── training.ipynb            --> (Notebook untuk melatih model)
-│   └── evaluation.ipynb          --> (Notebook untuk mengevaluasi model)
+│    ├── preprocessing.ipynb       --> (Notebook untuk membersihkan data)
+│    ├── training.ipynb            --> (Notebook untuk melatih model)
+│    └── evaluation.ipynb          --> (Notebook untuk mengevaluasi model)
 │
 ├── src/  
-│   ├── preprocess.py             --> (Skrip untuk membersihkan teks)
-│   ├── train.py                  --> (Skrip utama untuk melatih model)
-│   ├── evaluate.py               --> (Skrip untuk menguji model)
-│   ├── infer.py                  --> (Skrip untuk membuat prediksi atau embedding)
-│   └── save_load_model.py        --> (Skrip untuk menyimpan dan memuat model)
+│    ├── preprocess.py             --> (Skrip untuk membersihkan teks)
+│    ├── train.py                  --> (Skrip utama untuk melatih model)
+│    ├── evaluate.py               --> (Skrip untuk menguji model)
+│    ├── infer.py                  --> (Skrip untuk membuat prediksi atau embedding)
+│    └── save_load_model.py        --> (Skrip untuk menyimpan dan memuat model)
 │
 ├── requirements.txt              --> (Daftar pustaka yang diperlukan)
 ├── README.md                     --> (Deskripsi proyek dan panduan penggunaan)
