@@ -17,8 +17,16 @@ def infer(text, model_dir='./models/arabic_sentence_transformer', model_name='au
     return predictions.item()
 
 if __name__ == "__main__":
+    # Peta label untuk mengganti angka dengan nama buku
+    label_map = {
+        0: "Buku 1",
+        1: "Buku 2",
+        # Tambahkan sesuai dengan label yang ada
+    }
+
     # Contoh teks yang ingin diuji
     test_text = "الإهداء إلى والديّ الحبيبين رحمهما الله تعالى."
     prediction = infer(test_text)
 
-    print(f"Prediksi untuk teks: '{test_text}' adalah label: {prediction}")
+    # Menampilkan hasil prediksi dengan label yang lebih deskriptif
+    print(f"Prediksi untuk teks: '{test_text}' adalah label: {label_map.get(prediction, 'Label tidak dikenali')}")
