@@ -1,8 +1,13 @@
-import yaml
+training:
+  learning_rate: 2e-5
+  num_epochs: 3
+  batch_size: 16
+  weight_decay: 0.01
 
-with open("config.yaml", "r") as file:
-    config = yaml.safe_load(file)
+data:
+  train_file: "data/preprocessed_data.csv"
+  test_file: "data/preprocessed_data.csv"
 
-# Mengakses parameter dari config
-learning_rate = config['training']['learning_rate']
-num_epochs = config['training']['num_epochs']
+model:
+  model_name: "aubmindlab/arabert"
+  output_dir: "./models/arabic_sentence_transformer"
