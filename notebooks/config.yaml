@@ -1,0 +1,8 @@
+import yaml
+
+with open("config.yaml", "r") as file:
+    config = yaml.safe_load(file)
+
+# Mengakses parameter dari config
+learning_rate = config['training']['learning_rate']
+num_epochs = config['training']['num_epochs']
