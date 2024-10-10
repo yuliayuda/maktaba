@@ -32,6 +32,22 @@ Proyek ini bertujuan untuk melatih model klasifikasi teks menggunakan dataset be
 4. **Evaluasi Model**:
    - Jalankan `evaluation.ipynb` untuk mengevaluasi performa model.
 
+## nbconvert
+
+1. pip install nbconvert
+2. jupyter nbconvert --to script your_notebook.ipynb
+3. python your_notebook.py
+
+## nbrun
+
+1. pip install nbbrowser
+2. nbbrowser your_notebook.ipynb
+
+## papermill
+
+1. pip install papermill
+2. papermill input_notebook.ipynb output_notebook.ipynb
+
 ## Kontribusi
 
 Jika Anda ingin berkontribusi, silakan fork repository ini dan buat pull request.
