@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 from sklearn.metrics import classification_report
 
-def evaluate_model(test_file, model_name='aubmindlab/arabert', model_dir='./models/arabic_sentence_transformer'):
+def evaluate_model(test_file, model_dir='./models/arabic_sentence_transformer'):
     # Memuat dataset
     df = pd.read_csv(test_file)
 
@@ -13,7 +13,7 @@ def evaluate_model(test_file, model_name='aubmindlab/arabert', model_dir='./mode
     # Tokenisasi data
     tokens = tokenizer(df['text'].tolist(), padding=True, truncation=True, return_tensors="pt")
 
-    # Membuat label (di sini diasumsikan ada kolom label, jika tidak, sesuaikan sesuai kebutuhan)
+    # Membuat label (diasumsikan ada kolom label, sesuaikan jika perlu)
     labels = df['Book_Number'].tolist()  # Ganti dengan kolom label yang sesuai
 
     # Memuat model
