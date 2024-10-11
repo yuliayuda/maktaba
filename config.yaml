@@ -5,8 +5,8 @@ training:
   weight_decay: 0.01
 
 data:
-  train_file: "data/preprocessed_data.csv"
-  test_file: "data/preprocessed_data.csv"
+  train_file: "E:\\FINE_TUNNING\\datasets\\syamilah\\Splited\\A.csv"
+  test_file: "E:\\FINE_TUNNING\\datasets\\syamilah\\Splited\\B.csv"
 
 model:
   model_name: "aubmindlab/arabert"
