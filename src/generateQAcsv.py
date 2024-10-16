@@ -1,4 +1,4 @@
-#pip install pandas torch transformers evaluate scikit-learn wandb huggingface-hub
+#pip install pandas torch transformers evaluate scikit-learn wandb huggingface-hub transformers torch accelerate
 
 import os
 import pandas as pd
